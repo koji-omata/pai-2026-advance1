@@ -21,7 +21,6 @@
  コンテナ内のCUIでセットアップ
  ```
   /workspace/2drobot.sh
-  source .bashrc
  ```
 
 3. Start up ROS2 nodes
