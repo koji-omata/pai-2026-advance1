@@ -93,7 +93,7 @@
       <self_collide>false</self_collide>
     </model>
     <model name='demoRobot'>
-      <pose>-3.18442 0.082574 0.010008 0 0.006718 -0.571494</pose>
+      <pose>3.59877 0.022009 0.010008 0 0.006718 -0.070526</pose>
       <link name='base_link'>
         <sensor name='camera' type='camera'>
           <pose>0.2 0 0.2 0 -0 0</pose>
@@ -179,7 +179,7 @@
         <enable_wind>false</enable_wind>
       </link>
       <link name='wheel_left_link'>
-        <pose>0 0.095 0.023 -1.56995 -0.334556 -0.000277</pose>
+        <pose>0 0.095 0.023 -1.56861 1.19693 0.002039</pose>
         <inertial>
           <inertia>
             <ixx>1.11756e-05</ixx>
@@ -242,10 +242,10 @@
             <friction>0</friction>
           </dynamics>
         </axis>
-        <pose>-0 -0 0 0 -0 0</pose>
+        <pose>0 -0 -0 0 -0 0</pose>
       </joint>
       <link name='wheel_right_link'>
-        <pose>0 -0.095 0.023 1.56752 1.32598 3.13841</pose>
+        <pose>-0 -0.095 0.023 1.56878 -1.167 -3.13974</pose>
         <inertial>
           <inertia>
             <ixx>1.11756e-05</ixx>
@@ -313,10 +313,10 @@
             <friction>0</friction>
           </dynamics>
         </axis>
-        <pose>-0 0 0 0 -0 0</pose>
+        <pose>-0 -0 0 0 -0 0</pose>
       </joint>
       <link name='caster_back_right_link'>
-        <pose>0.15 -0.05 -0.004 -2.77362 -0.363308 0.09764</pose>
+        <pose>0.15 -0.05 -0.004 -2.52721 0.75927 -1.7875</pose>
         <inertial>
           <mass>0.001</mass>
           <inertia>
@@ -360,10 +360,10 @@
       <joint name='caster_back_right_joint' type='ball'>
         <parent>base_link</parent>
         <child>caster_back_right_link</child>
-        <pose>-0 0 0 0 -0 0</pose>
+        <pose>-0 -0 0 0 -0 0</pose>
       </joint>
       <link name='caster_back_left_link'>
-        <pose>0.15 0.05 -0.004 1.47176 -0.130902 2.18383</pose>
+        <pose>0.15 0.05 -0.004 -0.461537 -0.699259 -2.12036</pose>
         <inertial>
           <mass>0.001</mass>
           <inertia>
@@ -407,7 +407,7 @@
       <joint name='caster_back_left_joint' type='ball'>
         <parent>base_link</parent>
         <child>caster_back_left_link</child>
-        <pose>0 -0 0 0 -0 0</pose>
+        <pose>0 0 -0 0 -0 0</pose>
       </joint>
       <plugin name='ignition::gazebo::systems::DiffDrive' filename='libignition-gazebo-diff-drive-system.so'>
         <left_joint>wheel_left_joint</left_joint>
@@ -420,7 +420,7 @@
       <self_collide>false</self_collide>
     </model>
     <model name='cylinder'>
-      <pose>4.01992 -0.029294 0.499999 -0 -0 -0</pose>
+      <pose>4.2874 -0.020904 0.097782 -7e-06 -7.6e-05 0.008981</pose>
       <link name='cylinder_link'>
         <inertial>
           <inertia>
@@ -452,13 +452,13 @@
         <visual name='cylinder_visual'>
           <geometry>
             <cylinder>
-              <radius>0.1</radius>
-              <length>0.2</length>
+              <radius>0.10000000000000001</radius>
+              <length>0.20000000000000001</length>
             </cylinder>
           </geometry>
           <material>
-            <ambient>1.0 0.0 0.0 1.0</ambient>
-            <diffuse>1.0 0.0 0.0 1.0</diffuse>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
             <specular>1 1 1 1</specular>
           </material>
         </visual>
