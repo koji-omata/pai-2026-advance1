@@ -29,7 +29,6 @@ services:
       - "6080:80"
 
     volumes:
-      - ~/utils:/utils
       - ./workspace:/workspace
       - /run/user/${UID:-1000}/pulse/native:/tmp/pulse/native
       - ${HOME:-~}/.config/pulse/cookie:/tmp/pulse/cookie:ro
