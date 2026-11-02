@@ -92,6 +92,14 @@
       <pose>0 0 0 0 -0 0</pose>
       <self_collide>false</self_collide>
     </model>
+    <!-- コーラ缶モデル（Gazebo Fuelから自動ロード） -->
+    <include>
+      <name>coke_can</name>
+      <uri>
+      https://fuel.gazebosim.org/1.0/OpenRobotics/models/Coke Can
+      </uri>
+      <pose>1.5 0 0.2 0 0 0</pose>
+    </include> 
     <model name='demoRobot'>
       <pose>-2.23123 0.317569 0.010008 0 0.006718 2.9915</pose>
       <link name='base_link'>
@@ -416,55 +424,6 @@
         <wheel_radius>0.033</wheel_radius>
         <topic>cmd_vel</topic>
       </plugin>
-      <static>false</static>
-      <self_collide>false</self_collide>
-    </model>
-    <model name='cylinder'>
-      <pose>4.2889 -0.021131 0.130243 -8e-06 -7.9e-05 0.009811</pose>
-      <link name='cylinder_link'>
-        <inertial>
-          <inertia>
-            <ixx>0.14580000000000001</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.14580000000000001</iyy>
-            <iyz>0</iyz>
-            <izz>0.125</izz>
-          </inertia>
-          <mass>1</mass>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <collision name='cylinder_collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.5</radius>
-              <length>1</length>
-            </cylinder>
-          </geometry>
-          <surface>
-            <friction>
-              <ode/>
-            </friction>
-            <bounce/>
-            <contact/>
-          </surface>
-        </collision>
-        <visual name='cylinder_visual'>
-          <geometry>
-            <cylinder>
-              <radius>0.10000000000000001</radius>
-              <length>0.20000000000000001</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <ambient>1 0 0 1</ambient>
-            <diffuse>1 0 0 1</diffuse>
-            <specular>1 1 1 1</specular>
-          </material>
-        </visual>
-        <pose>0 0 0 0 -0 0</pose>
-        <enable_wind>false</enable_wind>
-      </link>
       <static>false</static>
       <self_collide>false</self_collide>
     </model>
