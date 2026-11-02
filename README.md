@@ -1,9 +1,5 @@
 # pai-2026-advance1
 
-## 提出物　(最終締め切り後更新)
-* Youtube Link: [リンク](https://youtube.com/shorts/nqT46Or6Wdw?feature=share)
-* レポート: [説明資料](説明資料_PAI最終課題_omnicampus_omata.pdf)
-
 ## 概要
 ### テーマ： Gazebo上の2輪ロボット移動
 ### 開発環境：WSL2
@@ -20,7 +16,12 @@
 2. Start up gazebo (in the container)
  コンテナ内のCUIでセットアップ
  ```
-  /workspace/2drobot.sh
+  /workspace/setup_2drobot.sh
+ ```
+ YOLOv8を使う場合、セットアップ時にROS 2 Humbleと互換性のあるNumPy 1.xをインストールします。
+ すでにNumPy 2.xをインストール済みで上記の`_ARRAY_API not found`エラーが出る場合は、コンテナ内で次を実行してからスクリプトを再実行してください。
+ ```
+ pip install "numpy<2" ultralytics
  ```
 
 3. Start up ROS2 nodes
