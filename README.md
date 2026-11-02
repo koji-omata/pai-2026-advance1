@@ -1,8 +1,8 @@
 # pai-2026-advance1
 
 ## 提出物　(最終締め切り後更新)
-* Youtube Link: https://youtube.com/shorts/nqT46Or6Wdw?feature=share
-* レポート: 説明資料_PAI最終課題_omnicampus_omata.pdf
+* Youtube Link: [リンク](https://youtube.com/shorts/nqT46Or6Wdw?feature=share)
+* レポート: [説明資料](説明資料_PAI最終課題_omnicampus_omata.pdf)
 
 ## 概要
 ### テーマ： Gazebo上の2輪ロボット移動
